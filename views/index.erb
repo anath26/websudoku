@@ -2,38 +2,42 @@
 <head>
 	<title>Sudoku Game</title>
 	<link href="/css/application.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+	
 </head>
 
 <body>
+	<div id="title">
 	<h1>Life is too short for playing Sudoku </h1>
+	</div>
+	<div id="style"> <img src="/images/menstyle.png" />
+	</div>
 	
 
 	<div id="sudoku">
 		<form action="/" method="post">
-			<form/>
-		<% 3.times do |row| %>
-		<div class='row'>
-			<% 3.times do |box| %>
-			<div class="box">
-				<% 3.times do |cell_row| %>
-				<div class="cell-row">
-					<% 3.times do |cell| %>
-					<div class="cell">
-						<% cell_index = row * 27 + box * 3 + cell_row * 9 + cell%>
-						<% cell_value = @current_solution[cell_index] %>
-						<input type="text" maxlength="1" autocomplete="off" name="cell[]" value= <%= cell_value %> >
-
-					</div>
-				  <%end%>
-				</div>
-			  <%end%>
-			</div>
-		  <%end%>
-		</div>
-
-			<form/>
-	  <%end%>
+  		<% 3.times do |row| %>
+    		<div class='row'>
+    			<% 3.times do |box| %>
+      			<div class="box">
+      				<% 3.times do |cell_row| %>
+        				<div class="cell-row">
+        					<% 3.times do |cell| %>
+          					<div class="cell">
+          						<% cell_index = row * 27 + box * 3 + cell_row * 9 + cell %>
+                      <% cell_value = cell_value(@current_solution[cell_index]) %>
+                      <% colour_class = colour_class(@check_solution, @puzzle[cell_index], @current_solution[cell_index], @solution[cell_index])  %>
+          						<input type="text" maxlength="1" autocomplete="off" name="cell[]" class="<%= colour_class %>" value="<%= cell_value %>">
+          					</div>
+      				    <%end%>
+      				  </div>
+      			  <%end%>
+      			</div>
+    		  <%end%>
+    		</div>
+	    <%end%>
+    </form>
 	</div>
-	<button>Check <br> solution</button>
+  <button>CHECK</button>
 </body>
 </html>

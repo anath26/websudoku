@@ -1,19 +1,21 @@
 div.box, div.cell {
 	display: inline-block;
 
+
 }
 
 .cell input {
-	width : 40px;
-	height: 40px;
-	border:1px solid grey;
+	border-radius: 15px;
+	width : 30px;
+	height: 30px;
+	border:0,8% solid grey;
  	text-align: center;
 
 
 }
 
 div.box {
-	border:2px solid grey;
+	border:1px solid grey;
  	
 
 }
@@ -28,22 +30,54 @@ div.box {
 
 
 #sudoku {
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 400px;
 	font-size: 0;
 	text-align: center;
 }
 
 body {
+	position: relative;
 	text-align: center;
-	font-family: Arial;
+	
+
+
+}
+
+#title {
+	position: absolute;
+	width:100px;
+	height:400px;
+	margin-top:60px;
+	margin-left: 50px;
+	font-family: 'Amatic SC', cursive;
+	font-size:20;
+	
+	
+	}
+
+#style {
+
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	margin-left:93px;
+	margin-top: 200px;
 
 
 }
 
 button {
-	margin-top: 20px;
-	border-radius: 100%;
+	margin-left: 10px;
+	margin-top:400px;
+	border-radius: 15px;
+	width : 30px;
+	height: 30px;
 	background-color: white;
 	text-align: center;
-	font-size: 10;
+	font-size: 5px;
+	font-family: helvetica;
+
 	
 }
