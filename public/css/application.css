@@ -1,83 +1,133 @@
-div.box, div.cell {
+div.cell {
 	display: inline-block;
-
 
 }
 
 .cell input {
-	border-radius: 15px;
-	width : 30px;
-	height: 30px;
-	border:0,8% solid grey;
+	border-radius: 45px;
+	content:0% solid grey;
  	text-align: center;
 
 
 }
 
 div.box {
+	display: inline-block;
 	border:1px solid grey;
  	
-
 }
 
-.row_cell input  {
-	width : 40px;
-	height: 40px;
+.cell-row input  {
+	margin: 5px 5px 5px 5px;
+	width : 25px;
+	height: 25px;
  	text-align: center;
- 	border:1,5px solid grey;
+ 	border:1.5px solid grey;
 
 }
-
 
 #sudoku {
 	position: absolute;
-	margin-top: 100px;
-	margin-left: 400px;
+	margin-top: 12%;
+	margin-left: 40%;
 	font-size: 0;
 	text-align: center;
+	width: 500px;
+	height: 500px;
 }
 
 body {
 	position: relative;
 	text-align: center;
 	
-
-
 }
 
 #title {
 	position: absolute;
 	width:100px;
-	height:400px;
+	height:500px;
 	margin-top:60px;
-	margin-left: 50px;
+	margin-left:118px;
 	font-family: 'Amatic SC', cursive;
-	font-size:20;
-	
-	
-	}
+	font-size:24;
+}
+
+#para {
+	position: absolute;
+	width: 220px;
+	height: 200px;
+	font-family: helvetica;
+	font-size:8px;
+	margin-top: 470px;
+	margin-left: 100px
+}
 
 #style {
-
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	margin-left:93px;
-	margin-top: 200px;
-
-
+	margin-left:183px;
+	margin-top: 263px;
 }
 
 button {
-	margin-left: 10px;
-	margin-top:400px;
-	border-radius: 15px;
-	width : 30px;
-	height: 30px;
-	background-color: white;
+	margin-left: -430px;
+	margin-top:-40px;
+	border-radius: 20px;
+	border:1.5px;
+	color:white;
+	width : 40px;
+	height: 40px;
+	background-color: #FF00FF;
 	text-align: center;
-	font-size: 5px;
-	font-family: helvetica;
+	font-size: 6px;
+	font-family: helvetica;	
+}
 
-	
+#button3 {
+	position: absolute;
+	border-radius: 50px;
+	border:1.5px;
+	background-color: 993366;
+	width:100px;
+	height:100px;
+	margin-left: -80px;
+	margin-top: 550px;
+	font-size: 9px;
+	text-align:center;
+	color:white;
+
+}
+
+
+ #button2 {
+	position: absolute;
+	border-radius: 30px;
+	border:1.5px;
+	background-color: 66CCCC;
+	width:60px;
+	height:60px;
+	margin-left: -90px;
+	margin-top: 480px;
+	font-size: 8px;
+	text-align:center;
+	color:white;	
+}
+
+#flash {
+	border: 1.5px dashed red;
+	position: absolute;
+	margin-top: 280px;
+	margin-left:300;
+	font-size: 16;
+	font-family: helvetica;
+	color: red;
+}
+
+.incorrect {
+	background-color: yellow;
+}
+
+.value-provided {
+	background-color:;
 }
