@@ -19,8 +19,8 @@ div.box {
 
 .cell-row input  {
 	margin: 5px 5px 5px 5px;
-	width : 25px;
-	height: 25px;
+	width : 30px;
+	height: 30px;
  	text-align: center;
  	border:1.5px solid grey;
 
@@ -57,7 +57,7 @@ body {
 	width: 220px;
 	height: 200px;
 	font-family: helvetica;
-	font-size:8px;
+	font-size:9px;
 	margin-top: 470px;
 	margin-left: 100px
 }
@@ -92,7 +92,7 @@ button {
 	width:100px;
 	height:100px;
 	margin-left: -80px;
-	margin-top: 550px;
+	margin-top: 590px;
 	font-size: 9px;
 	text-align:center;
 	color:white;
@@ -108,7 +108,7 @@ button {
 	width:60px;
 	height:60px;
 	margin-left: -90px;
-	margin-top: 480px;
+	margin-top: 520px;
 	font-size: 8px;
 	text-align:center;
 	color:white;	
