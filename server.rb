@@ -78,7 +78,7 @@ end
 
 def prepare_to_check_solution
 	@check_solution = session[:check_solution]
-	if @check_solution
+	if @check_solution 
 		flash[:notice] = " Try again loser ! "
 	else flash[:notice] = " "
 	end
