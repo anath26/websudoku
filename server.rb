@@ -21,7 +21,7 @@ end
 
 def puzzle(sudoku)
 	test = sudoku.dup
-	until test.count(0) == 30
+	until test.count(0) == 50
 		test[(0..80).to_a.sample] = 0
 	end
 	test

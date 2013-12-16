@@ -10,6 +10,12 @@ div.cell {
 
 
 }
+ .value-provided {
+ 	background-color:#FF00FF;
+ 	color:white;
+
+
+ }
 
 div.box {
 	display: inline-block;
@@ -93,7 +99,7 @@ button {
 	height:100px;
 	margin-left: -80px;
 	margin-top: 590px;
-	font-size: 9px;
+	font-size: 11px;
 	text-align:center;
 	color:white;
 
@@ -109,7 +115,7 @@ button {
 	height:60px;
 	margin-left: -90px;
 	margin-top: 520px;
-	font-size: 8px;
+	font-size: 9px;
 	text-align:center;
 	color:white;	
 }
